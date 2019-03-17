@@ -1,10 +1,10 @@
 <h1 align="center">
-  <img src="https://user-images.githubusercontent.com/45159366/54337994-d7b46400-45ed-11e9-8154-146a879bcefd.png">
+  <img src="https://user-images.githubusercontent.com/45159366/54486945-b00f0700-484c-11e9-8bd3-d6f74abd6376.png">
   <br />
-KDevelop
+Olive
 </h1>
 
-<p align="center"><b>This is the snap for KDevelop, a featureful, plugin-extensible IDE for C/C++ and other programming languages . It works on Ubuntu, Fedora, Debian, and other major Linux distributions. </p>
+<p align="center"><b>This is the snap for Olive, a professional open-source NLE video editor. It works on Ubuntu, Fedora, Debian, and other major Linux distributions. </p>
 
 <!-- Uncomment and modify this when you are provided a build status badge
 <p align="center">
@@ -12,7 +12,7 @@ KDevelop
 </p>
 -->
 <h1 align="center">
-  <img src="https://user-images.githubusercontent.com/45159366/54337996-d8e59100-45ed-11e9-8cca-d5c24abcdcfd.png">
+  <img src="https://user-images.githubusercontent.com/45159366/54486949-b56c5180-484c-11e9-8c89-dee695adf8fd.jpeg">
   <br />
 </h1>
 
@@ -20,7 +20,7 @@ KDevelop
 
 ## Install
 
-    sudo snap install kdevelop
+    sudo snap install olive
 
 ([Don't have snapd installed?](https://snapcraft.io/docs/core/install))
 
