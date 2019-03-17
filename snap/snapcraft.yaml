@@ -1,7 +1,7 @@
-name: kdevelop
-version: 5.3.2
-summary:  KDevelop IDE.
-description:  a featureful, plugin-extensible IDE for C/C++ and other programming languages.
+name: olive
+version: 20181223
+summary:  Video editor.
+description:  A professional open-source NLE video editor.
   
 adopt-info: devmode # use 'strict' once you have the right plugs and slots
 
@@ -14,8 +14,8 @@ architectures:
   
 
 apps:
-  kdevelop:
-    command: bin/kdevelop
+ olive:
+    command: bin/olive
     plugs:
       - home
       - network
@@ -23,13 +23,13 @@ apps:
       - opengl
 
 parts:
-kdevelop:
+olive:
     plugin: 
-    source: https://github.com/KDE/kdevelop.git
+    source: https://github.com/olive-editor/olive.git
     source-type: git
     override-pull: |
-     git clone https://github.com/KDE/kdevelop.git src/github.com/KDE/kdevelop
-       cd src/github.com/KDE/kdevelop
+     git clone https://github.com/olive-editor/olive.git src/github.com/olive-editor/olive
+       cd src/github.com/olive-editor/olive
       last_committed_tag="$(git describe --tags --abbrev=0)"
       last_committed_tag_ver="$(echo ${last_committed_tag} | sed 's/v//')"
       last_released_tag="$(snap info $SNAPCRAFT_PROJECT_NAME | awk '$1 == "beta:" { print $2 }')"
@@ -42,12 +42,12 @@ kdevelop:
       snapcraftctl set-version "$(git describe --tags | sed 's/v//')"
       override-build: |
       export GOPATH=$PWD
-      cd src/github.com/KDE/kdevelop
+      cd src/github.com/olive-editor/olive
       env CGO_ENABLED=0 GOOS=linux \
       go build --ldflags "-s -w \
-        -X 'github.com/KDE/kdevelop/version.GitCommit=$(git rev-list -1 HEAD)' \
-        -X 'github.com/KDE/kdevelop/version.Version=$(git describe --tags --abbrev=0)'" \
-        -a -installsuffix cgo -o $SNAPCRAFT_PART_INSTALL/bin/kdevelop
+        -X 'github.com/olive-editor/olive/version.GitCommit=$(git rev-list -1 HEAD)' \
+        -X 'github.com/olive-editor/olive/version.Version=$(git describe --tags --abbrev=0)'" \
+        -a -installsuffix cgo -o $SNAPCRAFT_PART_INSTALL/bin/olive
     build-snaps:
       - 
    build-packages:
