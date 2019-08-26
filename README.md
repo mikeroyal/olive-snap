@@ -4,7 +4,7 @@
 Olive
 </h1>
 
-<p align="center"><b>This is the snap for [Olive](https://olivevideoeditor.org/), a professional open-source NLE video editor. It works on Ubuntu, Fedora, Debian, and other major Linux distributions. </p>
+This is the snap for [Olive](https://olivevideoeditor.org/), a professional open-source NLE video editor. It works on Ubuntu, Fedora, Debian, and other major Linux distributions.
 
 <!-- Uncomment and modify this when you are provided a build status badge
 <p align="center">
